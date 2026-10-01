@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page & Counter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="page">
+        <section class="login-card">
+            <h1>Welcome back</h1>
+            <p class="subtitle">Please enter your details to sign in.</p>
+
+            <form id="loginForm">
+                <label for="email">Email address</label>
+                <input type="email" id="email" name="email" placeholder="you@example.com" required>
+
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password" required>
+
+                <button class="login-button" type="submit">Log in</button>
+                <p id="loginMessage" class="message" aria-live="polite"></p>
+            </form>
+        </section>
+
+        <section class="counter-card">
+            <h2>Simple Counter</h2>
+            <p class="counter-help">Try clicking the buttons below.</p>
+            <div id="count" class="count" aria-live="polite">0</div>
+            <div class="counter-buttons">
+                <button id="decreaseBtn" class="secondary-button" type="button">− Decrease</button>
+                <button id="increaseBtn" class="primary-button" type="button">+ Increase</button>
+            </div>
+            <button id="resetBtn" class="reset-button" type="button">Reset counter</button>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

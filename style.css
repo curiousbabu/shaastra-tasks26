@@ -1,0 +1,162 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f3f5f9;
+    color: #202938;
+}
+
+.page {
+    width: min(100% - 32px, 460px);
+    margin: 48px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+
+.login-card,
+.counter-card {
+    background: #ffffff;
+    border: 1px solid #e3e7ee;
+    border-radius: 12px;
+    padding: 28px;
+    box-shadow: 0 6px 20px rgba(25, 40, 65, 0.05);
+}
+
+h1,
+h2 {
+    margin: 0 0 8px;
+    color: #182338;
+}
+
+h1 {
+    font-size: 26px;
+}
+
+h2 {
+    font-size: 21px;
+}
+
+.subtitle,
+.counter-help {
+    margin: 0 0 24px;
+    color: #697386;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin: 0 0 7px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+input {
+    width: 100%;
+    margin-bottom: 18px;
+    padding: 12px;
+    border: 1px solid #cfd6e2;
+    border-radius: 7px;
+    font: inherit;
+    outline: none;
+}
+
+input:focus {
+    border-color: #4169d8;
+    box-shadow: 0 0 0 3px rgba(65, 105, 216, 0.12);
+}
+
+button {
+    border: 0;
+    border-radius: 7px;
+    padding: 11px 14px;
+    font: inherit;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.15s ease;
+}
+
+.login-button,
+.primary-button {
+    background: #315acb;
+    color: white;
+}
+
+.login-button:hover,
+.primary-button:hover {
+    background: #2448ad;
+}
+
+.message {
+    min-height: 18px;
+    margin: 12px 0 0;
+    color: #267346;
+    font-size: 13px;
+}
+
+.counter-card {
+    text-align: center;
+}
+
+.counter-help {
+    margin-bottom: 12px;
+}
+
+.count {
+    margin: 8px 0 18px;
+    font-size: 48px;
+    font-weight: 700;
+    color: #315acb;
+}
+
+.counter-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.secondary-button {
+    background: #e9edf5;
+    color: #26334a;
+}
+
+.secondary-button:hover {
+    background: #dce3ef;
+}
+
+.reset-button {
+    margin-top: 14px;
+    padding: 8px 12px;
+    background: transparent;
+    color: #697386;
+    font-size: 13px;
+}
+
+.reset-button:hover {
+    background: #f3f5f9;
+}
+
+@media (max-width: 420px) {
+    .page {
+        margin: 24px auto;
+    }
+
+    .login-card,
+    .counter-card {
+        padding: 22px;
+    }
+
+    .counter-buttons button {
+        flex: 1;
+    }
+}
